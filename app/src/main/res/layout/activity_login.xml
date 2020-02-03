@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="ChatApp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60sp"
+        android:textStyle="bold|italic" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_email_black_24dp"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        app:met_floatingLabel="highlight"
+        android:padding="10dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/email"
+        app:met_floatingLabel="highlight"
+        android:background="@drawable/ic_lock_black_24dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/id_btn_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttons"
+        android:text="Sign in"
+        android:textColor="#fff"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/id_tv_need_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/id_btn_login"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Need New Account?"
+        />
+
+
+</RelativeLayout>
